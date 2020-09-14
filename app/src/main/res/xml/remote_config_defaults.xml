@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>min_version_app</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>terms_url</key>
+        <value>https://calcula-flex-19mob.firebaseapp.com</value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.heiderlopes.calculaflex.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment" />
+    <fragment
+        android:id="@+id/calculateTripFragment"
+        android:name="br.com.heiderlopes.calculaflex.ui.calculatetrip.CalculateTripFragment"
+        android:label="fragment_calculate_trip"
+        tools:layout="@layout/fragment_calculate_trip">
+        <deepLink
+            android:id="@+id/deepLink4"
+            app:uri="https://www.calculaflex.com.br/calculatetrip" />
+    </fragment>
+    <fragment
+        android:id="@+id/carsListFragment"
+        android:name="br.com.heiderlopes.calculaflex.ui.cars.list.CarsListFragment"
+        android:label="fragment_cars_list"
+        tools:layout="@layout/fragment_cars_list">
+        <deepLink
+            android:id="@+id/deepLink5"
+            app:uri="https://www.calculaflex.com.br/mycars" />
+    </fragment>
+    <fragment
+        android:id="@+id/gasStationFragment"
+        android:name="br.com.heiderlopes.calculaflex.ui.gasstation.GasStationFragment"
+        android:label="fragment_gas_station"
+        tools:layout="@layout/fragment_gas_station">
+        <deepLink
+            android:id="@+id/deepLink6"
+            app:uri="https://www.calculaflex.com.br/gasstatation" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="br.com.heiderlopes.calculaflex.ui.help.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help">
+        <deepLink
+            android:id="@+id/deepLink3"
+            app:uri="https://www.calculaflex.com.br/help" />
+    </fragment>
+    <fragment
+        android:id="@+id/betterFuelFragment"
+        android:name="br.com.heiderlopes.calculaflex.ui.betterfuel.BetterFuelFragment"
+        android:label="BetterFuelFragment"
+        tools:layout="@layout/fragment_better_fuel">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.calculaflex.com.br/betterfuel" />
+    </fragment>
+    <include app:graph="@navigation/login_nav_graph" />
+
+</navigation>
